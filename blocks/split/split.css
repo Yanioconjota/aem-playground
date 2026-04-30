@@ -13,14 +13,10 @@
     border-bottom: var(--split-entry-border-bottom);
   }
   
-  .split .split-entry:last-child {
-    border-bottom: none;
-  }
-  
   /* Left column - title and subtitle */
   .split .split-header {
     margin-bottom: var(--size-s);
-    p {
+    h1, h2, h3, h4, h5, h6, p {
         margin: 0;
     }
   }
