@@ -13,6 +13,7 @@
 :root {
   /* colors */
   --background-color: white;
+  --border-color: #e0e0e0;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
@@ -38,6 +39,13 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* sizes*/
+  --size-s: 16px;
+  --size-m: 24px;
+  --size-l: 32px;
+  --size-xl: 40px;
+  --size-xxl: 48px;
 }
 
 /* fallback fonts */

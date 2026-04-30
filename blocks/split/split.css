@@ -1,9 +1,16 @@
+/* Variables */
+:root {
+    --split-border-color: var(--border-color);
+    --split-column-width: 350px;
+    --split-entry-padding: var(--size-m) 0;
+    --split-entry-border-bottom: 1px solid var(--split-border-color);
+}
 /* Mobile first - stacked layout */
 .split .split-entry {
     display: flex;
     flex-direction: column;
-    padding: 24px 0;
-    border-bottom: 1px solid #e0e0e0;
+    padding: var(--split-entry-padding);
+    border-bottom: var(--split-entry-border-bottom);
   }
   
   .split .split-entry:last-child {
@@ -12,18 +19,13 @@
   
   /* Left column - title and subtitle */
   .split .split-header {
-    margin-bottom: 16px;
-  }
-  
-  .split .split-title {
-    margin: 0;
-    font-weight: 600;
-    font-size: var(--body-font-size-m);
-    color: var(--text-color);
+    margin-bottom: var(--size-s);
+    p {
+        margin: 0;
+    }
   }
   
   .split .split-subtitle {
-    margin: 4px 0 0;
     font-size: var(--body-font-size-s);
     color: var(--dark-color);
   }
@@ -31,7 +33,6 @@
   /* Right column - description */
   .split .split-content {
     font-size: var(--body-font-size-s);
-    line-height: 1.6;
   }
   
   .split .split-content p {
@@ -46,11 +47,11 @@
   @media (width >= 900px) {
     .split .split-entry {
       flex-direction: row;
-      gap: 48px;
+      gap: var(--size-xxl);
     }
   
     .split .split-header {
-      flex: 0 0 280px;
+      flex: 0 0 var(--split-column-width);
       margin-bottom: 0;
       text-align: right;
     }
